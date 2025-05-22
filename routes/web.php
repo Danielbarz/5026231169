@@ -35,3 +35,31 @@ Route::get('pertama', function () {
 Route::get('ets', function () {
 	return view('index');
 });
+
+Route::get('layout', function () {
+	return view('layout');
+});
+
+Route::get('bootstrap', function () {
+	return view('belajarbootstrap');
+});
+
+Route::get('javascript', function () {
+	return view('belajarjs');
+});
+
+Route::get('linktree', function () {
+	return view('linktree');
+});
+
+Route::get('frontend', function () {
+	return view('frontend');
+});
+
+Route::get('video', function () {
+	return view('video');
+});
+
+Route::get('danantara', function () {
+	return view('danantara');
+});

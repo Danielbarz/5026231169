@@ -21,6 +21,7 @@
   </head>
 
   <body>
+    <div class="container">
     <h2>
       <span style="font-weight: bold; color: #083c84">
         Bantu Adaptasi Mahasiswa Baru, ITS Gelar Mentoring Agama Islam
@@ -73,5 +74,6 @@
       mahasiswa mampu mengamalkannya ilmu keislaman dalam kehidupan
       sehari-hari,” tambah Dosen Statistika ITS tersebut.
     </p>
+</div>
   </body>
 </html>
