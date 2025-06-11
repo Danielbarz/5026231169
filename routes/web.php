@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\SemenDBController;
 
 //import java.io;
 
@@ -95,3 +96,11 @@ Route::get('/pegawai/edit/{id}', [PegawaiDBController::class,'edit']);
 Route::post('/pegawai/update',[PegawaiDBController::class,'update']);
 Route::get('/pegawai/hapus/{id}',[PegawaiDBController::class,'hapus']);
 Route::get('/pegawai/cari',[PegawaiDBController::class,'cari']);
+
+Route::get('/semen', [SemenDBController::class, 'index']);
+Route::get('/semen/tambah', [SemenDBController::class, 'tambah']);
+Route::post('/semen/store', [SemenDBController::class, 'store']);
+Route::get('/semen/edit/{ID}', [SemenDBController::class, 'edit']);
+Route::post('/semen/update', [SemenDBController::class, 'update']);
+Route::get('/semen/hapus/{ID}', [SemenDBController::class, 'hapus']);
+Route::get('/semen/cari', [SemenDBController::class, 'cari']);
