@@ -79,6 +79,94 @@
             padding: 2rem;
         }
 
+        /* Themed panel for the content */
+        .content-panel {
+            background-color: #ffffff;
+            border-radius: 1.25rem;
+            padding: 2rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Search form styling */
+        .search-form {
+            display: flex;
+            gap: 10px;
+            max-width: 400px;
+        }
+        .search-form .form-control {
+            border-radius: 0.75rem;
+        }
+        .search-form .btn {
+            border-radius: 0.75rem;
+            background-color: #6366f1;
+            border-color: #6366f1;
+            color: white;
+        }
+
+        /* Table styling */
+        .table thead th {
+            border: none;
+            color: #6c757d;
+            font-weight: 600;
+        }
+        .table tbody tr {
+            transition: background-color 0.2s ease;
+        }
+        .table tbody tr:hover {
+            background-color: #f1f3f5;
+        }
+        .table td, .table th {
+             vertical-align: middle;
+        }
+
+        /* Badge styling for availability status */
+        .status-badge {
+            padding: 0.3em 0.75em;
+            border-radius: 50rem; /* Pill shape */
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .status-tersedia {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+        .status-habis {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+
+        .btn-primary { border-radius: 0.75rem; background-color: #6366f1; border:none; }
+        .btn-success { border-radius: 0.5rem; }
+        .btn-danger { border-radius: 0.5rem; }
+
+        /* Pagination Styling */
+        .pagination {
+            justify-content: center;
+        }
+        .pagination .page-item .page-link {
+            border-radius: 0.5rem;
+            margin: 0 3px;
+            border: none;
+            color: #6366f1;
+        }
+        .pagination .page-item.active .page-link {
+            background-color: #6366f1;
+            color: white;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+        .pagination .page-item.disabled .page-link {
+            color: #adb5bd;
+        }
+
+         /* Form styling from edit/add pages */
+        .form-control, .form-select {
+            border-radius: 0.75rem;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: #a855f7;
+            box-shadow: 0 0 0 0.25rem rgba(168, 85, 247, 0.25);
+        }
+        .btn-secondary { border-radius: 0.75rem; background-color: #6c757d; border-color: #6c757d;}
     </style>
 </head>
 <body>
@@ -116,7 +204,6 @@
     <div class="container-fluid">
         <div class="content-container">
             @yield('content')
-            <p>Ini adalah area konten utama. Anda bisa menempatkan tabel, formulir, atau teks di dalam area ini.</p>
         </div>
     </div>
 
