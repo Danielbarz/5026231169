@@ -16,70 +16,64 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" xintegrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <style>
-        /* Apply font and a new light theme */
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa; /* Clean, light grey background */
-            color: #212529; /* Dark text for high contrast */
+            background-color: #f8f9fa;
+            color: #212529;
         }
 
-        /* Full-width hero header with a modern gradient */
+
         .hero-header {
             padding: 4rem 2rem;
-            margin-bottom: -2rem; /* Pull the navbar up for an overlapping effect */
+            margin-bottom: -2rem;
             background-image: linear-gradient(45deg, #6366f1, #a855f7);
             color: #ffffff;
             position: relative;
-            z-index: 1; /* Ensure header is behind the navbar */
+            z-index: 1;
         }
 
         .hero-header h1 {
             font-weight: 600;
-            color: #ffffff; /* White text for visibility */
+            color: #ffffff;
         }
 
-        /* Glass effect for the navbar only */
         .glass-navbar {
-            background: rgba(255, 255, 255, 0.6); /* Semi-transparent white for a frosted look */
+            background: rgba(255, 255, 255, 0.6);
             -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
-            border-radius: 1.75rem; /* iOS-style rounded corners */
+            border-radius: 1.75rem;
             border: 1px solid rgba(255, 255, 255, 0.8);
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
             margin: 0 2rem 2rem 2rem;
             position: relative;
-            z-index: 2; /* Ensure navbar is on top of the header */
-        }
+            z-index: 2;
 
-        /* Styling for individual nav items */
+
         .glass-navbar .nav-item {
-            border-radius: 1.25rem; /* Pill shape */
+            border-radius: 1.25rem;
             transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
         }
 
-        /* Glowing effect on individual nav item hover */
         .glass-navbar .nav-item:hover {
             background-color: rgba(255, 255, 255, 0.5);
-            transform: translateY(-3px); /* Lift effect */
-            box-shadow: 0 0 20px rgba(168, 85, 247, 0.5); /* Glowing purple shadow */
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
         }
 
         .glass-navbar .nav-link {
-            color: #343a40; /* Darker text for readability on the light glass */
+            color: #343a40;
             transition: color 0.3s ease;
-            padding: 0.5rem 1rem; /* Adjust padding for better shape */
+            padding: 0.5rem 1rem;
         }
 
         .glass-navbar .nav-item:hover .nav-link {
-            color: #000000; /* Black on hover for contrast */
+            color: #000000;
         }
 
-        /* Styling for the main content area */
         .content-container {
             padding: 2rem;
         }
 
-        /* Themed panel for the content */
         .content-panel {
             background-color: #ffffff;
             border-radius: 1.25rem;
@@ -87,7 +81,6 @@
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
         }
 
-        /* Search form styling */
         .search-form {
             display: flex;
             gap: 10px;
@@ -103,7 +96,6 @@
             color: white;
         }
 
-        /* Table styling */
         .table thead th {
             border: none;
             color: #6c757d;
@@ -119,10 +111,9 @@
              vertical-align: middle;
         }
 
-        /* Badge styling for availability status */
         .status-badge {
             padding: 0.3em 0.75em;
-            border-radius: 50rem; /* Pill shape */
+            border-radius: 50rem;
             font-size: 0.8rem;
             font-weight: 600;
         }
@@ -139,7 +130,6 @@
         .btn-success { border-radius: 0.5rem; }
         .btn-danger { border-radius: 0.5rem; }
 
-        /* Pagination Styling */
         .pagination {
             justify-content: center;
         }
@@ -158,7 +148,6 @@
             color: #adb5bd;
         }
 
-         /* Form styling from edit/add pages */
         .form-control, .form-select {
             border-radius: 0.75rem;
         }
