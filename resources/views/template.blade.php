@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Daniel Bara Seftino : 5026231169</title>
     <meta charset="utf-8">
@@ -13,7 +14,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" xintegrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        xintegrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <style>
         body {
@@ -21,7 +23,6 @@
             background-color: #f8f9fa;
             color: #212529;
         }
-
 
         .hero-header {
             padding: 4rem 2rem;
@@ -50,6 +51,8 @@
         }
 
         .glass-navbar .nav-item {
+            margin: 0 5px;
+            /* PERUBAHAN: Menambahkan jarak horizontal antar item */
             border-radius: 1.25rem;
             transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
         }
@@ -64,6 +67,10 @@
             color: #343a40;
             transition: color 0.3s ease;
             padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            /* Jarak antara ikon dan teks */
         }
 
         .glass-navbar .nav-item:hover .nav-link {
@@ -72,6 +79,8 @@
 
         .content-container {
             padding: 2rem;
+            min-height: 60vh;
+            /* Memberi tinggi minimum agar footer tidak naik */
         }
 
         .content-panel {
@@ -86,9 +95,11 @@
             gap: 10px;
             max-width: 400px;
         }
+
         .search-form .form-control {
             border-radius: 0.75rem;
         }
+
         .search-form .btn {
             border-radius: 0.75rem;
             background-color: #6366f1;
@@ -101,14 +112,18 @@
             color: #6c757d;
             font-weight: 600;
         }
+
         .table tbody tr {
             transition: background-color 0.2s ease;
         }
+
         .table tbody tr:hover {
             background-color: #f1f3f5;
         }
-        .table td, .table th {
-             vertical-align: middle;
+
+        .table td,
+        .table th {
+            vertical-align: middle;
         }
 
         .status-badge {
@@ -117,47 +132,123 @@
             font-size: 0.8rem;
             font-weight: 600;
         }
+
         .status-tersedia {
             background-color: #d1fae5;
             color: #065f46;
         }
+
         .status-habis {
             background-color: #fee2e2;
             color: #991b1b;
         }
 
-        .btn-primary { border-radius: 0.75rem; background-color: #6366f1; border:none; }
-        .btn-success { border-radius: 0.5rem; }
-        .btn-danger { border-radius: 0.5rem; }
+        .btn-primary {
+            border-radius: 0.75rem;
+            background-color: #6366f1;
+            border: none;
+        }
+
+        .btn-success {
+            border-radius: 0.5rem;
+        }
+
+        .btn-danger {
+            border-radius: 0.5rem;
+        }
 
         .pagination {
             justify-content: center;
         }
+
         .pagination .page-item .page-link {
             border-radius: 0.5rem;
             margin: 0 3px;
             border: none;
             color: #6366f1;
         }
+
         .pagination .page-item.active .page-link {
             background-color: #6366f1;
             color: white;
             box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
         }
+
         .pagination .page-item.disabled .page-link {
             color: #adb5bd;
         }
 
-        .form-control, .form-select {
+        .form-control,
+        .form-select {
             border-radius: 0.75rem;
         }
-        .form-control:focus, .form-select:focus {
+
+        .form-control:focus,
+        .form-select:focus {
             border-color: #a855f7;
             box-shadow: 0 0 0 0.25rem rgba(168, 85, 247, 0.25);
         }
-        .btn-secondary { border-radius: 0.75rem; background-color: #6c757d; border-color: #6c757d;}
+
+        .btn-secondary {
+            border-radius: 0.75rem;
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+
+        /* Style untuk Footer Baru */
+        .site-footer {
+            background-color: #343a40;
+            color: #f8f9fa;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        .site-footer h5 {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .site-footer p,
+        .site-footer a {
+            color: #ced4da;
+            font-size: 0.9rem;
+        }
+
+        .site-footer a:hover {
+            color: #a855f7;
+            text-decoration: none;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: #495057;
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background-color: #6366f1;
+        }
+
+        .social-icons i {
+            color: #ffffff;
+        }
+
+        .copyright-text {
+            border-top: 1px solid #495057;
+            padding-top: 20px;
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="jumbotron text-center hero-header">
@@ -167,25 +258,25 @@
     <nav class="navbar navbar-expand-sm justify-content-center glass-navbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="frontend">All Front End</a>
+                <a class="nav-link" href="/frontend"><i class="fas fa-th-large"></i> All Front End</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/pegawai">Pegawai</a>
+                <a class="nav-link" href="/pegawai"><i class="fas fa-users"></i> Pegawai</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/semen">Tugas CRUD</a>
+                <a class="nav-link" href="/semen"><i class="fas fa-laptop-code"></i> Tugas CRUD</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">EAS</a>
+                <a class="nav-link" href="#"><i class="fas fa-file-alt"></i> EAS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 1</a>
+                <a class="nav-link" href="#"><i class="fas fa-book-open"></i> Latihan 1</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 2</a>
+                <a class="nav-link" href="/karyawan"><i class="fas fa-book-open"></i> Latihan 2</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 3</a>
+                <a class="nav-link" href="#"><i class="fas fa-book-open"></i> Latihan 3</a>
             </li>
         </ul>
     </nav>
@@ -196,10 +287,42 @@
         </div>
     </div>
 
+    <!-- Footer Baru -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h5>Tentang Saya</h5>
+                    <p>
+                        Daniel Bara Seftino - 5026231169 <br>
+                        I’m a hard working persistent person who’s interested in expanding relation and adding working
+                        experience. Based on my character, I’m good at working in a team and solving problems together.
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-right">
+                    <h5>Hubungi Saya</h5>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/danielbara._/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/danielbaraseft/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Danielbarz/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center copyright-text">
+                    <p>&copy; 2025 Daniel Bara Seftino. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

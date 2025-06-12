@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SemenDBController;
+use App\Http\Controllers\KaryawanDBController;
 
 //import java.io;
 
@@ -104,3 +105,8 @@ Route::get('/semen/edit/{ID}', [SemenDBController::class, 'edit']);
 Route::post('/semen/update', [SemenDBController::class, 'update']);
 Route::get('/semen/hapus/{ID}', [SemenDBController::class, 'hapus']);
 Route::get('/semen/cari', [SemenDBController::class, 'cari']);
+
+Route::get('/karyawan', [KaryawanDBController::class, 'index']);
+Route::get('/karyawan/tambah', [KaryawanDBController::class, 'tambah']);
+Route::post('/karyawan/store', [KaryawanDBController::class, 'store']);
+Route::get('/karyawan/hapus/{kodepegawai}', [KaryawanDBController::class, 'hapus']);
