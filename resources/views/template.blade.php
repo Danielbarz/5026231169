@@ -47,7 +47,7 @@
             margin: 0 2rem 2rem 2rem;
             position: relative;
             z-index: 2;
-
+        }
 
         .glass-navbar .nav-item {
             border-radius: 1.25rem;
