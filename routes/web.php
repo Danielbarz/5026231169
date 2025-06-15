@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CountController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
@@ -106,7 +107,13 @@ Route::post('/semen/update', [SemenDBController::class, 'update']);
 Route::get('/semen/hapus/{ID}', [SemenDBController::class, 'hapus']);
 Route::get('/semen/cari', [SemenDBController::class, 'cari']);
 
+
+//latigan 2
 Route::get('/karyawan', [KaryawanDBController::class, 'index']);
 Route::get('/karyawan/tambah', [KaryawanDBController::class, 'tambah']);
 Route::post('/karyawan/store', [KaryawanDBController::class, 'store']);
 Route::get('/karyawan/hapus/{kodepegawai}', [KaryawanDBController::class, 'hapus']);
+
+// latihan 1
+Route::get('/counter', [CountController::class, 'index']);
+

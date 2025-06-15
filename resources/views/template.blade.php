@@ -48,11 +48,17 @@
             margin: 0 2rem 2rem 2rem;
             position: relative;
             z-index: 2;
+            padding: 0.5rem 0; /* Menambah padding vertikal untuk ruang saat wrap */
+        }
+
+        /* PERBAIKAN: Membuat navbar-nav menjadi responsif */
+        .glass-navbar .navbar-nav {
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .glass-navbar .nav-item {
-            margin: 0 5px;
-            /* PERUBAHAN: Menambahkan jarak horizontal antar item */
+            margin: 5px; /* Mengganti margin agar konsisten di semua sisi */
             border-radius: 1.25rem;
             transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
         }
@@ -270,13 +276,13 @@
                 <a class="nav-link" href="#"><i class="fas fa-file-alt"></i> EAS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-book-open"></i> Latihan 1</a>
+                <a class="nav-link" href="/counter"><i class="fas fa-book-open"></i> Latihan 1</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/karyawan"><i class="fas fa-book-open"></i> Latihan 2</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-book-open"></i> Latihan 3</a>
+                <a class="nav-link" href="/karyawan"><i class="fas fa-book-open"></i> Latihan 3</a>
             </li>
         </ul>
     </nav>
