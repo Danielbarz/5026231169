@@ -273,7 +273,7 @@
                 <a class="nav-link" href="/semen"><i class="fas fa-laptop-code"></i> Tugas CRUD</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-file-alt"></i> EAS</a>
+                <a class="nav-link" href="/eas"><i class="fas fa-file-alt"></i> EAS</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/counter"><i class="fas fa-book-open"></i> Latihan 1</a>

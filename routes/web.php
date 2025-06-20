@@ -8,6 +8,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SemenDBController;
 use App\Http\Controllers\KaryawanDBController;
+use App\Http\Controllers\NewkaryawanController;
 
 //import java.io;
 
@@ -116,4 +117,10 @@ Route::get('/karyawan/hapus/{kodepegawai}', [KaryawanDBController::class, 'hapus
 
 // latihan 1
 Route::get('/counter', [CountController::class, 'index']);
+
+//eas
+Route::get('/eas', [NewkaryawanController::class, 'index']);
+Route::get('/eas/tambah', [NewkaryawanController::class, 'tambah']);
+Route::post('/eas/store', [NewkaryawanController::class, 'store']);
+Route::get('/eas/hapus/{NIP}', [NewkaryawanController::class, 'hapus']);
 
